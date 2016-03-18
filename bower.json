@@ -1,0 +1,23 @@
+{
+  "name": "testefront",
+  "description": "pagina de teste front",
+  "main": "assets/scripts/main.js",
+  "moduleType": [],
+  "keywords": [
+    "Teste",
+    "Front"
+  ],
+  "authors": [
+    "Vitor Amorim"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/vitorcominato/testefront",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
