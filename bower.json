@@ -1,11 +1,11 @@
 {
   "name": "testefront",
-  "description": "pagina de teste front",
+  "description": "Teste para MercadoEletronico",
   "main": "assets/scripts/main.js",
   "moduleType": [],
   "keywords": [
-    "Teste",
-    "Front"
+    "Marcado",
+    "Eletronico"
   ],
   "authors": [
     "Vitor Amorim"
