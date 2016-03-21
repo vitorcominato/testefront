@@ -1,58 +1,71 @@
 	<!DOCTYPE HTML>
-
 	<html>
-
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Mercado Eletrônico</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
 		<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
 	</head>
-
 	<body>
+
 		<header class="header">
 			<div class="header-main container">
 				<div class="mercadologo"></div>
-				<div class="profileBox">
+				<a class="profileBox" data-toggle="popover" tabindex="0" data-trigger="focus">
 					<div class="profile"></div>
 					<div class="welcome">Bem vindo,</div>
 					<div class="name">João da Silva</div>
 					<div class="arrow-down"></div>
-				</div>
+					<div class="popoverContent hide">
+						<div class="ballIncials">JS</div>
+						<div class="boxInfo">
+							<div class="nameInfo">João da Silva</div>
+							<div class="lastAccess">Último acesso: 10/10/15 09:39</div>
+							<a class="editLink">Alterar cadastro</a>
+							<a class="editLink">Alterar Senha</a>
+						</div>
+						<div class="footerPop">
+							<div class="pull-left"><span class="icon-chat"></span>Suporte Online</div>
+							<div class="pull-right"><span class="icon-logout"></span>Logout</div>
+						</div>
+					</div>
+				</a>
 			</div><!--//header-main-->
 		</header>
-		<section class="sideMenu col-xs-2">
-			<a class="itemMenu">
-				<span class="glyphicon glyphicon-home"></span>
+		<section class="sideMenu col-xs-1 col-lg-2">
+			<a href="#" class="itemMenu">
+				<span class="icon-home"></span>
 				<div class="nameMenu">Lorem Ipsum</div>
 			</a>
-			<a class="itemMenu">
+			<a href="#" class="itemMenu">
 				<span class="glyphicon glyphicon-tasks"></span>
 				<div class="nameMenu">Lorem Ipsum</div>
 			</a>
-			<a class="itemMenu">
-				<span class="glyphicon glyphicon-usd"></span>
+			<a href="#" class="itemMenu">
+				<span class="icon-dollar"></span>
 				<div class="nameMenu">Lorem Ipsum</div>
 			</a>
-			<a class="itemMenu">
-				<span class="glyphicon glyphicon-shopping-cart"></span>
+			<a href="#" class="itemMenu">
+				<span class="icon-shopping-cart"></span>
 				<div class="nameMenu">Lorem Ipsum</div>
 			</a>
-			<a class="itemMenu">
+			<a href="#" class="itemMenu">
 				<span class="glyphicon glyphicon-globe"></span>
 				<div class="nameMenu">Lorem Ipsum</div>
 			</a>
-			<a class="itemMenu">
-				<span class="glyphicon glyphicon-tags"></span>
+			<a href="#" class="itemMenu">
+				<span class="icon-tags"></span>
 				<div class="nameMenu">Lorem Ipsum</div>
 			</a>
-			<a class="itemMenu">
-				<span class="glyphicon glyphicon-question-sign"></span>
+			<a href="#" class="itemMenu">
+				<span class="icon-help-with-circle"></span>
 				<div class="nameMenu">Lorem Ipsum</div>
 			</a>
 		</section>
-		<section class="col-xs-10">
+		<section class="col-xs-11 col-lg-10 pull-right">
 			<div class="content col-xs-12">
-				<div id="carousel-example-generic" class="carousel slide col-xs-8 no-padding" data-ride="carousel">
+				<div id="carousel-example-generic" class="carousel slide col-md-8 col-xs-12 no-padding" data-ride="carousel">
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
@@ -85,23 +98,40 @@
 					</a>
 				</div>
 
-				<div class="col-xs-4 calendar">
+				<div class="col-md-4 col-xs-12 calendar">
 				    <div id="calendar"></div>
 				</div>
-
-				<div class="product col-xs-4">
-					<div class="titleProduct">#COD03021</div>
-					<div class="imgProduct"><img src="assets/images/chamex.png"></div>
-					<div class="productDescription">Papel Sulfite 75g Alcalino 210x297 A4 Chamex Office Ipaper</div>
-					<div class="priceTag">15,90</div>
+				<div class="clear">
+				<div class="boxProduct col-sm-4 col-xs-12">
+					<div class="product">
+						<div class="titleProduct">#COD03021</div>
+						<div class="imgProduct"><img src="assets/images/chamex.png"></div>
+						<div class="productDescription">Papel Sulfite 75g Alcalino 210x297 A4 Chamex Office Ipaper</div>
+						<div class="priceTag">R$ 15,90</div>
+						<button class="btn addCart"><span class="icon-add_shopping_cart"></span>carrinho</button>
+					</div>
+				</div>
+				<div class="boxProduct col-sm-4 col-xs-12">
+					<div class="product">
+						<div class="titleProduct">#COD03021</div>
+						<div class="imgProduct"><img src="assets/images/chamex.png"></div>
+						<div class="productDescription">Papel Sulfite 75g Alcalino 210x297 A4 Chamex Office Ipaper</div>
+						<div class="priceTag">R$ 15,90</div>
+						<button class="btn addCart"><span class="icon-add_shopping_cart"></span>carrinho</button>
+					</div>
+				</div>
+				<div class="boxProduct col-sm-4 col-xs-12">
+					<div class="product">
+						<div class="titleProduct">#COD03021</div>
+						<div class="imgProduct"><img src="assets/images/chamex.png"></div>
+						<div class="productDescription">Papel Sulfite 75g Alcalino 210x297 A4 Chamex Office Ipaper</div>
+						<div class="priceTag">R$ 15,90</div>
+						<button class="btn addCart"><span class="icon-add_shopping_cart"></span>carrinho</button>
+					</div>
 				</div>
 			</div>
 		</section>
-
-		
 		<div class="chamex"></div>
-		
-
 	</body>
 
 	<script type="text/javascript" src="assets/components/jquery/dist/jquery.min.js"></script>
@@ -109,6 +139,4 @@
 	<script type="text/javascript" src="assets/components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 	<script type="text/javascript" src="assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/scripts/main.js"></script>
-
-
 	</html>
