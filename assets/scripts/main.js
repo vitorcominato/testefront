@@ -48,6 +48,7 @@ $(function() {
 		    });
 		}
 	});
+	console.log($(".popoverContent").html());
 	$('.profileBox').popover({
 		animation: 	true,
 		html: 		true,
